@@ -1271,7 +1271,9 @@ export default function (pi: ExtensionAPI) {
 		},
 	});
 
-	pi.registerShortcut("ctrl+shift+m", {
+	// Modified by Nima Nooshiri on 24 April 2026
+    // pi.registerShortcut("ctrl+shift+m", {
+	pi.registerShortcut("alt+m", {
 		description: "Select prompt mode",
 		handler: async (ctx) => {
 			await selectModeUI(pi, ctx);
